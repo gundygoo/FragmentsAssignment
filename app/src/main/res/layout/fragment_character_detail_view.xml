@@ -1,4 +1,6 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,11 +8,60 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gundersonstudios.fragmentsassignment.CharacterDetails.Model.CharacterDetailModel$PlaceholderFragment">
+    tools:context="com.gundersonstudios.fragmentsassignment.CharacterDetails.Adapter.CharacterDetailAdapter$CharacterDetailViewFragment"
+    android:orientation="vertical"
+    app:layout_scrollFlags="scroll"
+    tools:background="@android:color/darker_gray">
 
     <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="Character Name Here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/characterName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_weight=".1"
+        android:layout_margin="5dip" />
 
-</RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/characterImage"
+        android:layout_weight=".25"
+        android:scaleType="fitCenter"
+        android:layout_margin="5dip"
+        android:elevation="1dp"
+        android:layout_height="100dip" />
+
+    <TextView
+        android:text="Media Name Here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediaName"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_weight=".1"
+        android:layout_margin="5dip" />
+
+    <EditText
+        android:text="Character Quote Here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/characterQuote"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:layout_weight=".15"
+        android:layout_margin="5dip" />
+
+    <TextView
+        android:text="Character Description Here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/characterDescription"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:layout_weight=".4"
+        android:layout_margin="5dip" />
+
+</LinearLayout>
