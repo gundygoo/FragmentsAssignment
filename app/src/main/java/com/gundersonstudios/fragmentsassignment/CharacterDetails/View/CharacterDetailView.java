@@ -14,13 +14,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.gundersonstudios.fragmentsassignment.CharacterDetails.Model.CharacterDetailModel;
 import com.gundersonstudios.fragmentsassignment.R;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,7 +48,9 @@ public class CharacterDetailView extends AppCompatActivity {
 
     private static ArrayList<CharacterDetailModel> characterList;
 
-    private List<CharacterDetailViewFragment> characterFragmentList = new ArrayList<CharacterDetailViewFragment>();
+    private static List<CharacterDetailViewFragment> characterFragmentList = new ArrayList<CharacterDetailViewFragment>();
+
+    private static CharacterQuoteListViewFragment characterQuoteListViewFragment = new CharacterQuoteListViewFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -190,6 +195,8 @@ public class CharacterDetailView extends AppCompatActivity {
         }
 
         void setFieldsOfFragment(View rootView){
+            characterQuoteListViewFragment.updateQuotes();
+
             TextView characterName = (TextView) rootView.findViewById(R.id.characterName);
             characterName.setText(getArguments().getString(ARG_CHARACTER_NAME));
 
@@ -224,6 +231,50 @@ public class CharacterDetailView extends AppCompatActivity {
         }
     }
 
+    public static class CharacterQuoteListViewFragment extends Fragment {
+        private static final String ARG_SECTION_NUMBER = "section_number";
+
+        private static List<String> quoteList = new ArrayList<>();
+
+        public CharacterQuoteListViewFragment() {
+        }
+
+        public void updateQuotes() {
+            quoteList.clear();
+            for(int i = 0; i < characterFragmentList.size(); i++) {
+                if(characterFragmentList.get(i).newQuoteText != "") {
+                    quoteList.add(i, characterFragmentList.get(i).currentQuoteText);
+                }
+                else {
+                    quoteList.add(i, characterFragmentList.get(i).newQuoteText);
+                }
+            }
+        }
+
+        public static CharacterQuoteListViewFragment newInstance(int position) {
+            CharacterQuoteListViewFragment fragment = new CharacterQuoteListViewFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, position);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+
+            View rootView = inflater.inflate(R.layout.fragment_character_quote_list_view, container, false);
+
+            updateQuotes();
+
+            ArrayAdapter adapter = new ArrayAdapter(getActivity(), R.layout.character_quote_list_item, quoteList);
+            ListView listView = (ListView) rootView.findViewById(R.id.character_quote_list);
+            listView.setAdapter(adapter);
+
+            return rootView;
+        }
+    }
+
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
@@ -238,15 +289,21 @@ public class CharacterDetailView extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            CharacterDetailViewFragment newFragment = CharacterDetailViewFragment.newInstance(position + 1, characterList.get(position));
-            characterFragmentList.add(newFragment);
-            return newFragment;
+            if(position < 3) {
+                CharacterDetailViewFragment newFragment = CharacterDetailViewFragment.newInstance(position + 1, characterList.get(position));
+                characterFragmentList.add(newFragment);
+                return newFragment;
+            }
+            else {
+                characterQuoteListViewFragment = CharacterQuoteListViewFragment.newInstance(position + 1);
+                return characterQuoteListViewFragment;
+            }
         }
 
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
 
         @Override
