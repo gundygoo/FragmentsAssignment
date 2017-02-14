@@ -12,26 +12,6 @@ public class CharacterDetailModel {
 
     private String m_ResourceString;
 
-
-    public enum MediaType {
-        TVSHOW("TV Show", 0),
-        MOVIE("Movie", 1),
-        VIDEOGAME("Video Game", 2);
-
-        private String stringValue;
-        private int intValue;
-
-        private MediaType(String toString, int value){
-            stringValue = toString;
-            intValue = value;
-        }
-
-        @Override
-        public String toString() {
-            return stringValue;
-        }
-    }
-
     public CharacterDetailModel(String characterName, String quote, String mediaName, String description, String resourceString) {
         m_CharacterName = characterName;
         m_Quote = quote;
