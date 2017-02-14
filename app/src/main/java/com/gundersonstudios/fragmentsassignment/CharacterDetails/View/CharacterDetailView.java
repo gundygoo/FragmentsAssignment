@@ -23,7 +23,6 @@ import android.widget.TextView;
 import com.gundersonstudios.fragmentsassignment.CharacterDetails.Model.CharacterDetailModel;
 import com.gundersonstudios.fragmentsassignment.R;
 
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,16 +67,6 @@ public class CharacterDetailView extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-
         characterList = new ArrayList<>();
 
         characterList.add(new CharacterDetailModel("Pink Guy",
@@ -95,9 +84,6 @@ public class CharacterDetailView extends AppCompatActivity {
                 "The Call of Cthulhu - Short Story",
                 "Cthulhu is a cosmic deity of evil and insanity, also known as the great dreamer, as his dreams travel the cosmos driving all who see them insane.",
                 "cthulhu"));
-
-
-
     }
 
 
@@ -195,8 +181,6 @@ public class CharacterDetailView extends AppCompatActivity {
         }
 
         void setFieldsOfFragment(View rootView){
-            characterQuoteListViewFragment.updateQuotes();
-
             TextView characterName = (TextView) rootView.findViewById(R.id.characterName);
             characterName.setText(getArguments().getString(ARG_CHARACTER_NAME));
 
@@ -223,6 +207,7 @@ public class CharacterDetailView extends AppCompatActivity {
                 @Override
                 public void afterTextChanged(Editable editable) {
                     newQuoteText = editable.toString();
+                    characterQuoteListViewFragment.updateQuotes();
                 }
             });
 
@@ -242,7 +227,7 @@ public class CharacterDetailView extends AppCompatActivity {
         public void updateQuotes() {
             quoteList.clear();
             for(int i = 0; i < characterFragmentList.size(); i++) {
-                if(characterFragmentList.get(i).newQuoteText != "") {
+                if(characterFragmentList.get(i).newQuoteText.equals("")) {
                     quoteList.add(i, characterFragmentList.get(i).currentQuoteText);
                 }
                 else {
@@ -302,7 +287,7 @@ public class CharacterDetailView extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
+            // Show 4 total pages.
             return 4;
         }
 
