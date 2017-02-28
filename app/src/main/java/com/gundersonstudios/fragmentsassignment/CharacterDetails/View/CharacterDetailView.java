@@ -1,6 +1,5 @@
 package com.gundersonstudios.fragmentsassignment.CharacterDetails.View;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,25 +8,19 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
+import com.gundersonstudios.fragmentsassignment.CharacterDetails.Fragments.CharacterDetailViewFragment;
+import com.gundersonstudios.fragmentsassignment.CharacterDetails.Fragments.CharacterQuoteListViewFragment;
 import com.gundersonstudios.fragmentsassignment.CharacterDetails.Model.CharacterDetailModel;
 import com.gundersonstudios.fragmentsassignment.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CharacterDetailView extends AppCompatActivity {
+public class CharacterDetailView extends AppCompatActivity implements CharacterDetailViewFragment.characterDetailViewListener,
+                                                                      CharacterQuoteListViewFragment.characterQuoteListListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -46,7 +39,11 @@ public class CharacterDetailView extends AppCompatActivity {
 
     private static String packageName;
 
-    private static ArrayList<CharacterDetailModel> characterList;
+    private  ArrayList<CharacterDetailModel> characterList;
+
+    private CharacterQuoteListViewFragment quoteFrag = null;
+
+    private List<String> quoteList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +78,8 @@ public class CharacterDetailView extends AppCompatActivity {
                 "The Call of Cthulhu - Short Story",
                 "Cthulhu is a cosmic deity of evil and insanity, also known as the great dreamer, as his dreams travel the cosmos driving all who see them insane.",
                 "cthulhu"));
+
+        quoteList = new ArrayList<>();
     }
 
 
@@ -106,135 +105,26 @@ public class CharacterDetailView extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public static class CharacterDetailViewFragment extends Fragment {
-        private static final String ARG_SECTION_NUMBER = "section_number";
-        private static final String ARG_CHARACTER_NAME = "character_name";
-        private static final String ARG_CHARACTER_DESCRIPTION = "character_description";
-        private static final String ARG_CHARACTER_QUOTE = "character_quote";
-        private static final String ARG_IMAGE_RESOURCE_STRING = "image_resource_string";
-        private static final String ARG_MEDIA_NAME = "media_name";
-
-        public String oldText = "";
-        public String currentQuoteText = "";
-
-        characterDetailViewListener mCallback;
-
-        public CharacterDetailViewFragment(){
-        }
-
-        public interface characterDetailViewListener {
-            void textChanged(Editable editable, int position);
-            void setQuotesForListAtStartup(String quote, int position);
-        }
-
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-
-            try {
-                mCallback = (characterDetailViewListener) activity;
-            }
-            catch (ClassCastException e) {
-                throw new ClassCastException(activity.toString() + " must implement characterDetailViewListener");
-            }
-        }
-
-        public static CharacterDetailViewFragment newInstance(int position, CharacterDetailModel model){
-            CharacterDetailViewFragment fragment = new CharacterDetailViewFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, position);
-            args.putString(ARG_CHARACTER_NAME, model.getCharacterName());
-            args.putString(ARG_CHARACTER_DESCRIPTION, model.getDescription());
-            args.putString(ARG_CHARACTER_QUOTE, model.getQuote());
-            args.putString(ARG_IMAGE_RESOURCE_STRING, model.getResourceString());
-            args.putString(ARG_MEDIA_NAME, model.getMediaName());
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState){
-            View rootView = inflater.inflate(R.layout.fragment_character_detail_view, container, false);
-            setFieldsOfFragment(rootView);
-            mCallback.setQuotesForListAtStartup(currentQuoteText, Integer.parseInt(getArguments().getString(ARG_SECTION_NUMBER)));
-            return rootView;
-        }
-
-        void setFieldsOfFragment(View rootView){
-            TextView characterName = (TextView) rootView.findViewById(R.id.characterName);
-            characterName.setText(getArguments().getString(ARG_CHARACTER_NAME));
-
-            ImageView characterImage = (ImageView) rootView.findViewById(R.id.characterImage);
-            characterImage.setImageResource(getResources().getIdentifier(getArguments().getString(ARG_IMAGE_RESOURCE_STRING), "drawable", packageName));
-
-            TextView mediaName = (TextView) rootView.findViewById(R.id.mediaName);
-            mediaName.setText(getArguments().getString(ARG_MEDIA_NAME));
-
-            EditText characterQuote = (EditText) rootView.findViewById(R.id.characterQuote);
-            characterQuote.setText(getArguments().getString(ARG_CHARACTER_QUOTE));
-            currentQuoteText = getArguments().getString(ARG_CHARACTER_QUOTE);
-            characterQuote.addTextChangedListener(new TextWatcher() {
-                @Override
-                public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                    oldText = charSequence.toString();
-                }
-
-                @Override
-                public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                }
-
-                @Override
-                public void afterTextChanged(Editable editable) {
-                    mCallback.textChanged(editable, Integer.parseInt(getArguments().getString(ARG_SECTION_NUMBER)));
-                }
-            });
-
-            TextView characterDescription = (TextView) rootView.findViewById(R.id.characterDescription);
-            characterDescription.setText(getArguments().getString(ARG_CHARACTER_DESCRIPTION));
+    @Override
+    public void textChanged(Editable editable, int position) {
+        String newQuoteText = editable.toString();
+        quoteList.set(position - 1, newQuoteText);
+        if (quoteFrag != null){
+            quoteFrag.updateQuoteList(quoteList);
         }
     }
 
-    public static class CharacterQuoteListViewFragment extends Fragment implements CharacterDetailViewFragment.characterDetailViewListener {
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        private static List<String> quoteList = new ArrayList<>();
-
-        public CharacterQuoteListViewFragment() {
-        }
-
-        public static CharacterQuoteListViewFragment newInstance(int position) {
-            CharacterQuoteListViewFragment fragment = new CharacterQuoteListViewFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, position);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-
-            View rootView = inflater.inflate(R.layout.fragment_character_quote_list_view, container, false);
-
-            ArrayAdapter adapter = new ArrayAdapter(getActivity(), R.layout.character_quote_list_item, quoteList);
-            ListView listView = (ListView) rootView.findViewById(R.id.character_quote_list);
-            listView.setAdapter(adapter);
-
-            return rootView;
-        }
-
-        @Override
-        public void textChanged(Editable editable, int position) {
-            String newQuoteText = editable.toString();
-            quoteList.set(position - 1, newQuoteText);
-        }
-
-        @Override
-        public void setQuotesForListAtStartup(String quote, int position) {
+    @Override
+    public void setQuotesForListAtStartup(String quote, int position) {
+        if(quoteList.size() <= 2){
             String newQuoteText = quote;
-            quoteList.set(position, newQuoteText);
+            quoteList.add(newQuoteText);
         }
+    }
+
+    @Override
+    public void quoteFragCreated() {
+        quoteFrag.updateQuoteList(quoteList);
     }
 
     /**
@@ -256,7 +146,8 @@ public class CharacterDetailView extends AppCompatActivity {
                 return newFragment;
             }
             else {
-                return CharacterQuoteListViewFragment.newInstance(position + 1);
+                quoteFrag = CharacterQuoteListViewFragment.newInstance(position + 1);
+                return quoteFrag;
             }
         }
 
