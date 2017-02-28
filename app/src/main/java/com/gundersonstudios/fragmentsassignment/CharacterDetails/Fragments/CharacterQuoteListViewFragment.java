@@ -31,7 +31,7 @@ public class CharacterQuoteListViewFragment extends Fragment {
     }
 
     public interface characterQuoteListListener {
-        public void quoteFragCreated();
+        void quoteFragCreated();
     }
 
     @Override
