@@ -3,174 +3,174 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_5b439154124d926018280b0494d119da80f8818f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_1710afc915ac47da4b265e79c9df725e98e641e3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_7745ad2d4ab0884d202d5fdfb946c2a043dff830\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_1e812d1aedc1b50f50c840b144e74b9447de16f9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_652863caaf6aa5ba14314b192f9e85346c1cd8f1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_21464ef540c05089b5fb1da493b97e63b3099daf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_d5f2c31cf30de2ed8075f3f8ca83363aaf1954ae\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_247b7f703a02fef4357f7c155b89b5b1d2abf4b5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b2b355086c6841e8611c58d52ec201cf4c7f6830\classes.dex" />
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_a8f28f9adf9b770cf4ceb7b165e47b182ce9896b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8258145a6fcdca93e69ca7228ef1f8fe35103ebe">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e6b1098432c83a90778f923121fc5cc2a0798bad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0fcb94e984399d6b0926dfbbd7ba3c5d656eeea4\classes.dex" />
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_e292330fb3ef1f26f7dfaf29bd261dce38e4d82f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_e6412f6daa208317f5758dc6b5c2c974a1534589\classes.dex" />
+        sha1="54a48e3f479c1127e9c498a476e817feb66ddb65">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5e488320df3301931d0d70049ace2d66ac1b1eb3\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c8ea182087c1dfb13513f82384dffb587559d57f">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0efc6f00611137430028f19daff1ae47c6f45772\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_f3f1837ad83d6b2a63d621dbec5b4a952ec519ce\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_03107400e426d757efd4886975dd5c045a8f8c07\classes.dex" />
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_e852a73489fb61b250213a1443c055d39a5316c6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_47e3198cf444d79abef2a78f78d175447cfd92f4\classes.dex" />
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_c77ae57a0793df0565fb7ba31f785e121fbae8d6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_a362c05b80feb15608e28bc80a0ec6f2152b2d5f\classes.dex" />
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_fdaa30b6416a1eef1bddbfe1f467931fe681a564\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_cb866bf2c1dec7614ff0bddb3e0d9931cda20000\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_8a92580209249f174a4d3c936995da5eacb90b88\classes.dex" />
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_a84be71846751ed756bcef4fe01e0675ee620ea4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_4f0c6bd07264b1a86c0dee1ed966947999e75f4c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\Erik\Documents\GitHub\FragmentsAssignment\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_47c4483d6c53de99b122775d3ca4ffe5c893fadb\classes.dex" />
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_0744d4bb666effcd9e88ee4a303a0d7f892bcbd0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_8ae762460d7305d87b9a6795c50235523d340e23\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_97fd6ebd7ee00a27cd646516bc4de6e22fc2f67b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_2efa38686b7e6820ea09cf92519c78991250b186\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_b1ad4bcb3b1d8d743d86bf2f79f17cb53c69fe4a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_95e97ce840eb8981437acf1898653de0c748dc3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="037feca3e846c971419ec3a7fd5d6ba212ad6e43">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6661a9d9e03b37cbf01ca73e864decea675deb10\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_da5b93f775d3b77275f17779f4eb3e585721cd04\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_f9fd8961d84aed7bdd888ddecac19439029e8c54\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Patrick\Documents\GitHub\FragmentsAssignment\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_55d3c8c464c929d9ce83277b1f0a9e62cf92b679\classes.dex" />
     </item>
 
 </items>
